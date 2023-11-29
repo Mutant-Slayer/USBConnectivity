@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var usbBroadcastReceiver: BroadcastReceiver
 
+    // added this check because we are getting a disconnect callback from power source also
     private var connected = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
